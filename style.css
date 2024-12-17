@@ -1,0 +1,280 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+}
+
+#loginBtn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #0095f6;
+    display: flex;
+    align-items: center;
+}
+
+#loginBtn img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content-tab {
+    padding: 20px;
+    display: none;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.post-content img, .post-content video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-top: 1px solid #efefef;
+    padding-top: 10px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    color: #262626;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.post-actions button:hover {
+    color: #0095f6;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.icon.liked {
+    color: red;
+}
+
+.comment-section {
+    margin-top: 15px;
+}
+
+.comment {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #262626;
+}
+
+.comment input {
+    width: 80%;
+    margin-right: 10px;
+}
+
+.comment button {
+    background-color: #0095f6;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.comment button:hover {
+    background-color: #0078c2;
+}
+
+#addPostSection {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#postContent {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#fileInput {
+    margin-bottom: 10px;
+}
+
+#postBtn {
+    background-color: #0095f6;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#postBtn:hover {
+    background-color: #0078c2;
+}
+
+#postList {
+    list-style: none;
+    padding: 0;
+}
+
+#postList li {
+    background-color: white;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info p {
+    font-weight: bold;
+    color: #262626;
+}
+
+footer {
+    background-color: white;
+    color: #999;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    border-top: 1px solid #e6e6e6;
+}
+
+footer a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-tab {
+        padding: 10px;
+    }
+
+    #loginBtn {
+        font-size: 14px;
+    }
+
+    .post-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post-actions button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.comment-section {
+    margin-top: 15px;
+}
+
+.comment {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #262626;
+    display: flex;
+    align-items: flex-start;
+}
+
+.user-comment-info {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.user-comment-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-comment-info p {
+    font-weight: bold;
+    color: #262626;
+}
+
+.comment p {
+    margin-left: 10px;
+}

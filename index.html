@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="noticiasLink">Notícias</a></li>
+                <li><a href="#" id="postagensLink">Postagens Diárias</a></li>
+                <li><a href="#" id="fofocasLink">Fofocas</a></li>
+            </ul>
+        </nav>
+        <div class="login-btn">
+            <button id="loginBtn">Login</button>
+        </div>
+    </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuário" required><br>
+                <input type="password" id="password" placeholder="Senha" required><br>
+                <input type="file" id="profilePic" accept="image/*"><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div id="noticias" class="content-tab" style="display:none;">
+            <h1>Notícias</h1>
+            <p>Aqui estarão as notícias.</p>
+        </div>
+        <div id="postagens" class="content-tab" style="display:none;">
+            <h1>Postagens Diárias</h1>
+            <div id="addPostSection">
+                <h2>Adicionar Postagem</h2>
+                <textarea id="postContent" placeholder="Escreva sua postagem aqui..." rows="4"></textarea><br>
+                <input type="file" id="fileInput" accept="image/*,video/*"><br>
+                <button id="postBtn">Publicar</button>
+            </div>
+            <div id="postagensList">
+                <h3>Postagens Recentes:</h3>
+                <ul id="postList"></ul>
+            </div>
+        </div>
+        <div id="fofocas" class="content-tab" style="display:none;">
+            <h1>Fofocas</h1>
+            <p>Aqui estarão as fofocas.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
